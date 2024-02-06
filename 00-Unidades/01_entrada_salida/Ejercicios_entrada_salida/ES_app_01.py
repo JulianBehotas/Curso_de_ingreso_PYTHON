@@ -2,7 +2,7 @@ import tkinter
 from tkinter.messagebox import showinfo as alert
 from tkinter.messagebox import askyesno as question
 from tkinter.simpledialog import askstring as prompt
-import customtkinter
+import customtkinter                
 
 '''
 nombre:
@@ -26,8 +26,9 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
+        alert("Titulo", "Esto no anda, funciona")
         pass
-
+ 
 
 if __name__ == "__main__":
     app = App()
