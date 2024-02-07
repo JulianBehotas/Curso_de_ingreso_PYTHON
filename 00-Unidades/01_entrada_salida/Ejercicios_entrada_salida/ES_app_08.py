@@ -40,9 +40,14 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
-        
-        
+        operador_a = self.txt_operador_a.get()
+        operador_b = self.txt_operador_b.get()
+        operador_a = float(operador_a)
+        operador_b = float(operador_b)
+        suma_de_operadores = (operador_a + operador_b) % 2
+        alert("Titulo", suma_de_operadores)
+
+
     
 if __name__ == "__main__":
     app = App()
