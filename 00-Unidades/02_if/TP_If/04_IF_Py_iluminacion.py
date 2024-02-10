@@ -61,16 +61,32 @@ class App(customtkinter.CTk):
         else:
             mensaje = f"El precio es: {precio}"
             
-            if cantidad_float >= 5 and marca == "ArgentinaLuz":
+            if cantidad_float == 5 and marca == "ArgentinaLuz":
                 precio_final = precio * 40/100
                 precio_con_descuento = precio - precio_final
                 mensaje = f"El precio es: {precio_con_descuento}"
                 
-            elif cantidad_float >= 5 and marca != "ArgentinaLuz":
+            elif cantidad_float == 5 and marca != "ArgentinaLuz":
                  precio_final = precio * 30/100
                  precio_con_descuento = precio - precio_final
                  mensaje = f"El precio es: {precio_con_descuento}"
+                 
+                 if cantidad_float == 4 and marca == "FelipeLamparas":
+                    precio_final = precio * 25/100
+                    precio_con_descuento = precio - precio_final
+                    mensaje = f"El precio es: {precio_con_descuento}"
+                
 
+                     
+                 
+                     
+
+                     
+                     
+                     
+
+            
+#Si compra 4  lamparitas bajo consumo marca "ArgentinaLuz" o “FelipeLamparas” se hace un descuento del 25 % y si es de otra marca el descuento es del 20%.
                 
                
                
