@@ -7,8 +7,8 @@ import random
 
 
 '''
-nombre:
-apellido:
+nombre: Diego Julian
+apellido: Behotas
 ---
 Ejercicio: if_10
 ---
@@ -32,7 +32,21 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass  
+        numero_al_azar = random.randrange(1,10)
+        if numero_al_azar <= 3:
+           mensaje = f"Desaprobado, la nota es: {numero_al_azar}"
+
+        elif numero_al_azar <=5:
+           mensaje = f"Aprobado la nota es: {numero_al_azar}"
+
+        else:
+           mensaje = f"Promoción directa, la nota es: {numero_al_azar}"
+
+         
+
+        alert("", mensaje)
+            
+        
             
 
 if __name__ == "__main__":

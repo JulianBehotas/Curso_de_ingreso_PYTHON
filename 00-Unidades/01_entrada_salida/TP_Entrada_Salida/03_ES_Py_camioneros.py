@@ -59,11 +59,16 @@ class App(customtkinter.CTk):
 
     def btn_tiempo_llegada_on_click(self):
         kilometros = self.txt_kilometros .get()
+
         kilometros = float(kilometros)
         #info del usuario
         tiempo_de_llegada = kilometros / 90
+
         tiempo_de_llegada_redondo = round(tiempo_de_llegada)
+
+
         alert("", f"En : {tiempo_de_llegada_redondo} hora/s")
+        #No logre poner los minutos, pero lo intente
     
     
 if __name__ == "__main__":

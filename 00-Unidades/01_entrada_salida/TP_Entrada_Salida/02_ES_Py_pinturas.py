@@ -54,7 +54,7 @@ class App(customtkinter.CTk):
 
         fahrenheit = (celcius * 9/5) + 32
 
-        alert("", f"{celcius}°C x 9/5 + 32 = {fahrenheit}°F")
+        alert("", f"{celcius}°C = {fahrenheit}°F")
 
 
 
@@ -68,7 +68,7 @@ class App(customtkinter.CTk):
 
        fahrent_a_celcius = (fahrenheit_ - 32) * 5/9
        
-       alert("", f"{fahrenheit_} °F − 32 × 5/9 = {fahrent_a_celcius}°C")
+       alert("", f"{fahrenheit_} °F = {fahrent_a_celcius}°C")
     
     
 if __name__ == "__main__":
